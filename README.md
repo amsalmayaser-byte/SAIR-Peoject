@@ -1,91 +1,161 @@
-Custom Neural Network Library (NumPy) 🧠💻
-Version 1.0 – First Release 🚀
+<h1 align="center">🧠 Neural Network Library</h1>
+<h3 align="center">Built From Scratch Using Python</h3>
 
-A lightweight and modular neural network library implemented from scratch using Python and NumPy.
-This project is designed to deeply understand and implement the internal mechanics of neural networks — including forward propagation, backpropagation, activation functions, optimizers, and custom loss functions — without relying on frameworks like PyTorch or TensorFlow.
-This library prioritizes clarity, correctness, and educational value over computational performance.
+<p align="center">
+  <b>Educational Neural Network Implementation</b><br>
+  Pure Python • No Deep Learning Frameworks • Visual Evaluation
+</p>
 
-🎯 Project Goals
+<hr>
 
-Understand how neural networks work internally at a low level
-Implement backpropagation manually using the chain rule
-Design a modular architecture similar to modern deep learning libraries
-Explore optimization techniques such as Adam
-Integrate regularization to control overfitting
-Create custom loss functions and visualize outputs including matrices
+<h2>📌 About The Project</h2>
+<p>
+This project is a <b>Neural Network Library implemented completely from scratch using Python</b>.
+All core components were manually designed and implemented to gain a deep understanding
+of how neural networks work internally, without relying on high-level frameworks
+such as TensorFlow or PyTorch.
+</p>
 
-🚀 Key Features
+<p>
+The project emphasizes <b>mathematical understanding, matrix operations, training logic,
+and visual evaluation</b>.
+</p>
 
-Modular Design – Layers are independent and reusable
-Dynamic Networks – Build networks by stacking layers
-Extensible – Easily add new layers, activation functions, or loss functions
-Custom Loss Functions – Fully implemented with plotting support
-Visualization Support – Plot outputs, weights, and matrices
-🔌 Activation Functions
-Implemented with forward and backward passes:
+<hr>
 
-ReLU
-Sigmoid
-Tanh
+<h2>✨ Key Features</h2>
+<ul>
+  <li>Fully Connected (Dense) Layers</li>
+  <li>Activation Functions</li>
+  <li>Forward Propagation</li>
+  <li>Backward Propagation (Backpropagation)</li>
+  <li>Training Loop with Multiple Epochs</li>
+  <li>Mean Squared Error (MSE) Loss</li>
+  <li>Gradient Descent Optimization</li>
+  <li>Matrix-Based Computation</li>
+  <li>Loss Curve Visualization</li>
+  <li>Confusion Matrix with Heatmap Visualization</li>
+</ul>
 
-🛡 Elastic Net Regularization (L1 & L2)
-L1 Regularization encourages sparsity in weights
-L2 Regularization penalizes large weights to improve numerical stability
-Regularization terms are added directly to the weight gradients during backpropagation. Bias terms are not regularized.
+<hr>
 
-⚙️ Optimizers
-SGD (baseline optimizer)
-Adam, featuring:
-First moment (momentum) estimation
-Second moment (adaptive scaling)
-Bias correction
-Independent optimizer state per layer
+<h2>🧩 Implemented Components</h2>
 
-📝 Design & Mathematical Notes
-Gradients are computed manually (no automatic differentiation)
-All tensors are handled explicitly as NumPy arrays with fixed shapes
-Each layer caches its forward-pass inputs for use during backpropagation
-Optimizer state (moments, time step) is explicitly managed
-Regularization is applied only to weight matrices
-This design mimics the internal mechanics of modern deep learning frameworks while remaining fully transparent.
+<h3>🔹 Layers</h3>
+<ul>
+  <li>Fully Connected (Dense) Layer</li>
+  <li>Manual weight and bias initialization</li>
+</ul>
 
-📂 Project Structure
+<h3>🔹 Activation Functions</h3>
+<ul>
+  <li>Activation functions implemented to introduce non-linearity</li>
+  <li>Improve learning capability of the neural network</li>
+</ul>
 
-├── confusion_matrix_heatmap.png
-├── loss_curve_batch.png
-├── nn_library
-│   ├── activations
-│   │   ├── functions.py
-│   │   ├── _init_.py
-│   │   └── _pycache_
-│   │       ├── functions.cpython-312.pyc
-│   │       └── _init_.cpython-312.pyc
-│   ├── core
-│   │   ├── _init_.py
-│   │   ├── layer.py
-│   │   ├── network.py
-│   │   ├── neuron.py
-│   │   └── _pycache_
-│   │       ├── _init_.cpython-312.pyc
-│   │       ├── layer.cpython-312.pyc
-│   │       └── network.cpython-312.pyc
-│   ├── losses
-│   │   ├── functions.py
-│   │   ├── _init_.py
-│   │   └── _pycache_
-│   │       ├── functions.cpython-312.pyc
-│   │       └── _init_.cpython-312.pyc
-│   ├── optimizers
-│   │   ├── _init_.py
-│   │   ├── optimizers.py
-│   │   └── _pycache_
-│   │       ├── _init_.cpython-312.pyc
-│   │       └── optimizers.cpython-312.pyc
-│   ├── start.py
-│   └── utils
-│       ├── batch_generator.py
-│       ├── _intt_.py
-│       └── _pycache_
-│           └── batch_generator.cpython-312.pyc
-├── start.py
-└── train_val_loss_curve.png
+<h3>🔹 Forward Propagation</h3>
+<ul>
+  <li>Linear matrix transformation</li>
+  <li>Activation application</li>
+  <li>Output generation</li>
+</ul>
+
+<h3>🔹 Backward Propagation</h3>
+<ul>
+  <li>Manual gradient computation</li>
+  <li>Chain rule application</li>
+  <li>Shape and dimension consistency handling</li>
+</ul>
+
+<h3>🔹 Loss Functions</h3>
+<ul>
+  <li>Mean Squared Error (MSE)</li>
+  <li>Loss gradient calculation</li>
+</ul>
+
+<h3>🔹 Optimization</h3>
+<ul>
+  <li>Basic Gradient Descent optimizer</li>
+  <li>Manual weight and bias updates</li>
+</ul>
+
+<hr>
+
+<h2>🔁 Training Process</h2>
+<ul>
+  <li>Custom training loop implementation</li>
+  <li>Includes forward pass, loss computation, backward pass, and parameter updates</li>
+  <li>Training performed over multiple epochs</li>
+</ul>
+
+<hr>
+
+<h2>📊 Visualization & Evaluation</h2>
+
+<h3>🔹 Loss Function Visualization</h3>
+<ul>
+  <li>Loss values tracked during training</li>
+  <li>Loss curve plotted to visualize convergence behavior</li>
+</ul>
+
+<h3>🔹 Matrix Operations</h3>
+<ul>
+  <li>All neural network computations are based on matrix operations</li>
+  <li>Implemented using NumPy for numerical efficiency</li>
+</ul>
+
+<h3>🔹 Confusion Matrix & Heatmap</h3>
+<ul>
+  <li>Confusion Matrix generated for classification evaluation</li>
+  <li>Visualized using Seaborn Heatmap</li>
+  <li>Provides clear and intuitive performance analysis</li>
+</ul>
+
+<hr>
+
+<h2>🗂️ Project Structure</h2>
+<pre>
+nn_library/
+├── core/
+│   ├── layers/
+│   │   └── dense.py
+│   ├── activations/
+│   ├── losses/
+│   │   └── functions.py
+│   ├── optimizers/
+│   │   └── gradient_descent.py
+│
+├── tests/
+├── utils/
+└── main.py
+</pre>
+
+<hr>
+
+<h2>⚙️ Requirements</h2>
+<ul>
+  <li>Python 3.8+</li>
+  <li>NumPy</li>
+  <li>Matplotlib</li>
+  <li>Seaborn</li>
+</ul>
+
+<hr>
+
+<h2>🎓 Learning Outcomes</h2>
+<ul>
+  <li>Strong understanding of neural network internals</li>
+  <li>Hands-on experience with matrix-based computations</li>
+  <li>Clear understanding of training dynamics and loss behavior</li>
+  <li>Practical model evaluation using visual tools</li>
+</ul>
+
+<hr>
+
+<h2>👩‍💻 Author</h2>
+<p><b>Amsalma Yaser</b></p>
+
+<hr>
+
+<h2>📄 License</h2>
+<p>This project is intended for educational and academic use only.</p>
