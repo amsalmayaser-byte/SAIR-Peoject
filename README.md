@@ -4,7 +4,7 @@
 
 <p align="center">
   <b>Educational Neural Network Project</b><br>
-  Pure Python • Matrix-Based • Visual Evaluation
+  Pure Python • Matrix-Based • Textual Evaluation
 </p>
 
 <hr>
@@ -19,7 +19,7 @@ TensorFlow or PyTorch.
 
 <p>
 The implementation focuses on <b>matrix operations, activation functions, batch-based training,
-training loops, and visual evaluation of model performance</b>.
+training loops, and textual explanation of model performance</b>.
 </p>
 
 <hr>
@@ -34,8 +34,7 @@ training loops, and visual evaluation of model performance</b>.
   <li>Mean Squared Error (MSE) Loss</li>
   <li>Gradient Descent Optimization</li>
   <li>Matrix-based Computation using NumPy</li>
-  <li>Loss Curve Visualization</li>
-  <li>Confusion Matrix with Heatmap</li>
+  <li>Textual evaluation of Loss and Model Performance</li>
 </ul>
 
 <hr>
@@ -84,39 +83,9 @@ training loops, and visual evaluation of model performance</b>.
 
 <hr>
 
-<h2>📊 Visualization & Evaluation</h2>
-
-<h3>🔹 Training Loss Curve</h3>
-<p>
-Loss values are tracked during training and plotted to visualize
-the convergence behavior of the model.
-</p>
-<p align="center">
-  <img src="loss_curve_batch.png" width="600">
-</p>
-
-<h3>🔹 Training & Validation Loss</h3>
-<p align="center">
-  <img src="train_val_loss_curve.png" width="600">
-</p>
-
-<h3>🔹 Confusion Matrix Heatmap</h3>
-<p>
-Model performance is evaluated using a confusion matrix,
-visualized with a heatmap using the <b>Seaborn</b> library.
-</p>
-<p align="center">
-  <img src="confusion_matrix_heatmap.png" width="500">
-</p>
-
-<hr>
-
 <h2>🗂️ Project Structure</h2>
 <pre>
 .
-├── confusion_matrix_heatmap.png
-├── loss_curve_batch.png
-├── train_val_loss_curve.png
 ├── nn_library
 │   ├── activations
 │   │   └── functions.py
@@ -140,8 +109,8 @@ visualized with a heatmap using the <b>Seaborn</b> library.
 <ul>
   <li>Python 3.8+</li>
   <li>NumPy</li>
-  <li>Matplotlib</li>
-  <li>Seaborn</li>
+  <li>Matplotlib (optional for future visualizations)</li>
+  <li>Seaborn (optional for future visualizations)</li>
 </ul>
 
 <hr>
@@ -151,7 +120,7 @@ visualized with a heatmap using the <b>Seaborn</b> library.
   <li>Deep understanding of neural network internals</li>
   <li>Strong foundation in matrix-based computation</li>
   <li>Hands-on experience with training loops and batching</li>
-  <li>Clear model evaluation using visual tools</li>
+  <li>Ability to explain model performance textually</li>
 </ul>
 
 <hr>
@@ -163,3 +132,4 @@ visualized with a heatmap using the <b>Seaborn</b> library.
 
 <h2>📄 License</h2>
 <p>This project is intended for educational and academic use only.</p>
+
