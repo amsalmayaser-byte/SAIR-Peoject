@@ -30,7 +30,7 @@ model = NeuralNetwork()
 model.add(Dense(input_size=n_features, output_size=16, activation='relu',dropout_rate=0.2,l2_lambda=0.01))
 model.add(Dense(input_size=16, output_size=8, activation='relu',dropout_rate=0.2,l2_lambda=0.01))
 model.add(Dense(input_size=8, output_size=1, activation='sigmoid',l2_lambda=0.01))
-print("Model built with Dropout and L2 Regularization .")
+print("Model built with Dropout and L2 Regularization.")
 
 # --- 3. تحديد دالة الخسارة والمُحسِّن ---
 model.set_loss(MSE())
