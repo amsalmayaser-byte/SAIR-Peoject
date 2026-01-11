@@ -1,9 +1,10 @@
 import numpy as np
 
 class Dense:
-    def __init__(self, input_size, output_size, activation=None,dropout_rate=0.0):
+    def __init__(self, input_size, output_size, activation=None,dropout_rate=0.0,l2_lambda=0.01):
         self.activation = activation
         self.dropout_rate =dropout_rate
+        self.l2_lambda = l2_lambda
         self.mask = None
         limit = np.sqrt(6 / (input_size + output_size))
         self.weights = np.random.uniform(-limit, limit, (input_size, output_size))
