@@ -12,10 +12,10 @@ class NeuralNetwork:
     def set_loss(self, loss_function):
         self.loss = loss_function
 
-    def predict(self, input_data):
+    def predict(self, input_data,training=False):
         output = input_data
         for layer in self.layers:
-            output = layer.forward(output)
+            output = layer.forward(output,training=False)
         return output
 
     def train(self, x_train, y_train, epochs, optimizer, batch_size=32, validation_data=None):
@@ -30,7 +30,7 @@ class NeuralNetwork:
             
             for x_batch, y_batch in batch_generator:
                 # 1. Forward pass
-                output = self.predict(x_batch)
+                output = self.predict(x_batch,training=True)
                 
                 # 2. Compute loss
                 loss = self.loss.forward(output, y_batch)
